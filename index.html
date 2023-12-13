@@ -1,125 +1,144 @@
 <!DOCTYPE html>
-<html lang="en-ca">
-
+<html lang="en">
 <head>
-  <!-- Set the page title -->
-  <title>Final Exam</title>
-
-  <!-- Set the charset we're using to UTF-8 -->
-  <meta charset="utf-8" />
-
-  <!-- Set the screens default zoom / scale to 1 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Specifies the document mode for Internet Explorer -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <!-- Set the CSS Reset File -->
-  <link rel="stylesheet" href="./reset.css" />
-
-  <!-- Set some basic CSS for the header and body -->
-  <link rel="stylesheet" href="./style.css" />
-
-  <!-- Set the Favicon  -->
-  <link rel="icon" href="./images/favicon/window.svg" type="image/svg+xml" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
+<body>
+
+    <div class="header">
+        <h1>Web Development Solutions Made Easy</h1>
+        <p>Crafting Digital Dreams: Transforming Code into Captivating Experiences - Your Vision, My Expertise</p>
+    </div>
+    
+    <div class="services-section">
+        <div class="service-box1">
+            <h3>WEB DEVELOPMENT</h3>
+        </div>
+        <div class="service-box2 ">
+            <h3>HTML</h3>
+        </div>
+        <div class="service-box3">
+            <h3>UI/UX</h3>
+        </div>
+        <div class="service-box4">
+            <h3>CSS</h3>
+        </div>
+        <div class="service-box5">
+            <h3>JAVASCRIPT</h3>
+        </div>
+        <div class="service-box6">
+            <h3>GITHUB</h3>
+        </div>
+    </div>
+
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .portfolio-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            gap: 20px;
+        }
+
+        .portfolio-image {
+            flex: 1;
+            max-width: 600px; /* Adjust it based on your preference */
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .portfolio-description {
+            flex: 2;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        @media (max-width: 720px) {
+            .portfolio-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-section">
+        <div class="portfolio-image">
+            <img src="image/Image.png" alt="Amy's Project">
+        </div>
+        <div class="portfolio-description">
+            <p>Hey, I'm Amy. Are you ready to level up your web project?</p>
+            <p>I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+            <button class="contact-me">Contact Me</button>
+        </div>
+    </div>
+    <header class="site-header">
+        <h1>My Work</h1>
+    </header>
+
+    <main class="work-showcase">
+        <div class="work-item">
+            <img src="image/work.jpeg" alt="Work 1">
+            <h3>Tutorial Excersise 3</h3>
+            <p>HTML  CSS</p>
+        </div>
+        
+        <div class="work-item">
+            <img src="image/work 2.jpeg" alt="Work 2">
+            <h3>Tutorial Excersise 5</h3>
+            <p>HTML  CSS</p>
+        </div>
+
+        <div class="work-item">
+            <img src="image/work 3.jpeg" alt="Work 3">
+            <h3>Tutorial Excersise 7</h3>
+            <p>HTML  CSS</p>
+        </div>
+
+        <div class="work-item">
+            <img src="image/work 4.jpeg" alt="Work 4">
+            <h3>Tutorial Excersise 9</h3>
+            <p>HTML  CSS</p>
+        </div>
+    </main>
+    <section class="contact-section">
+        <div class="contact-content">
+            <h1>Book a call with me</h1>
+            <p>Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!</p>
+            <button class="contact-button">Contact Me</button>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p>© 2023 Amy's Web Development Agency</p>
+    </footer> 
+</body>
 
 <body>
 
-  <!--
-
-    FINAL EXAM CONTENT
-
-    ALL OF THE CONTENT BELOW HAS BEEN PROVIDED FOR YOU SO
-    THAT YOU CAN FOCUS ON THE HTML STRUCTURE AND SEMANTICS.
-
-    ---------------------------------------------
-
-    # HEADER SECTION
-
-    Site Header (hidden text - not visible on screen)
-    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-light.svg)
-    Contact Us
-
-    # MAIN SECTION
-
-    ## HERO SECTION
-
-    Amy's Web Development Agency (hidden text - not visible on screen)
-    Web Development Solutions Made Easy
-    Crafting Digital Dreams: Transforming Code into Captivating Experiences - Your Vision, My Expertise.
-
-
-    ## SKILLS SECTION
-
-    My Skills (hidden text - not visible on screen)
-    Web Development
-    UI/UX
-    CSS
-    JavaScript
-    HTML
-    GitHub
-
-    ## ABOUT ME SECTION
-
-    About me (hidden text - not visible on screen)
-    Picture of Amy's in business atire with a pink background (<- image alt text <- ./images/about/about.jpg)
-
-    Hey, I'm Amy. Are you ready to level up your web project?
-
-    I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
-
-    Contact me
-
-    ## MY WORK SECTION
-
-    My Work
-
-    Screenshot of Tutorial Exercise 03 (<- image alt text <- ./images/work/work-1.png)
-    Tutorial Exercise 03
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 05 (<- image alt text <- ./images/work/work-2.png)
-    Tutorial Exercise 05
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 07 (<- image alt text <- ./images/work/work-3.png)
-    Tutorial Exercise 07
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 09 (<- image alt text <- ./images/work/work-4.png)
-    Tutorial Exercise 09
-    HTML
-    CSS
-    JavaScript
-
-    Book a call with me
-
-    ## CONTACT ME SECTION
-
-    Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!"
-
-    Contact Me
-
-    ## FOOTER SECTION
-
-    Site Footer (hidden text - not visible on screen)
-
-    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-dark.svg)
-    © 2023 Amy's Web Development Agency
-
-  -->
-
-  <main>
-    <div class="page-container">
-      <h1>Complete Your Final Exam Here</h1>
-    </div>
-  </main>
-
-
+   
 </body>
+
 </html>

@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+.header {
+    text-align: center;
+    padding: 40px;
+    background-color: pink;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.header p {
+    font-size: 1em;
+}
+
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    background-color:#e9e8e8;
+}
+
+.service-box1 {
+    flex-basis: 15%;
+    margin: 1px;
+    padding: 50px;
+    text-align: center;
+    background-color: #14235d;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+}
+.service-box2 {
+    height: 100px;
+    flex-basis: 12%;
+    margin: 50px;
+    padding: 60px;
+    text-align: center;
+    background-color: #9f1d09;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.service-box3 {
+    flex-basis: 15%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #3ea20f;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.service-box4 {
+    flex-basis: 15%;
+    margin: 70px;
+    padding: 15px;
+    text-align: center;
+    background-color: #6b23de;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.service-box5 {
+    flex-basis: 15%;
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #c4f307;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.service-box6 {
+    width: auto;
+    flex-basis: 15%;
+    margin: 80px;
+    padding: 7px;
+    text-align: center;
+    background-color: #101ccb;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+@media (max-width: 720px) {
+    .service-box {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-box {
+        flex-basis: 90%;
+    }
+}
+
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-header, .site-footer {
+    background-color: #290b56;
+    color: rgb(118, 9, 9);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.contact-button {
+    background-color: #0066ff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+/* Banner Styles */
+.main-banner {
+    background: url('path-to-banner-image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+    color: rgb(138, 54, 54);
+}
+
+.main-banner h1 {
+    font-size: 2.5em;
+}
+
+/* Services Section Styles */
+.services {
+    display: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #dee417;
+}
+
+.service {
+    background-color: rgb(208, 157, 16);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Portfolio Styles */
+.contact-me {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.portfolio-intro {
+    display: table-column;
+    padding: 20px;
+    align-items: center;
+}
+
+.portfolio-image {
+    max-width: 5%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.portfolio-description h2 {
+    margin: 0 0 10px 0;
+}
+
+
+/* Work Gallery Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.site-header {
+    background-color:pink;
+    color:black
+    padding: 20px;
+    text-align: center;
+}
+
+.work-showcase {
+    display: flex;
+    flex-direction: row; /* Ensure all items are in a single row */
+    justify-content: space-around;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px;
+    background-color: rgba(255, 192, 203, 0.091);
+}
+
+.work-item {
+    background-color: pink;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 0 0 22%; /* Do not grow, do not shrink, base width 22% */
+    margin: 0 1%; /* Adjust margins based on base width */
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    /* Added min-width so items maintain a semblance of usable size */
+    min-width: 200px;
+}
+
+.work-item img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.work-item h3 {
+    margin: 10px 0;
+}
+
+.site-footer {
+    background-color: pink;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    position: relative;
+}
+
+/* For better mobile responsiveness */
+@media (max-width: 1200px) {
+    .work-item {
+        flex: 0 0 45%; /* Adjust for better mobile layout */
+        margin: 0 2.5%; /* Adjust margins based on base width */
+    }
+}
+
+@media (max-width: 768px) {
+    .work-item {
+        flex: 0 0 90%; /* Full width minus margin for very small devices */
+        margin: 0 5%; /* Increase margin for very small devices */
+    }
+}
+
+
+
+.contact-section {
+    background-color: rgba(191, 46, 191, 0.588);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px; /* Can be adjusted based on preference */
+    margin: auto; /* Centers the section in the available space */
+    display: flex; /* Use Flexbox for inner alignment */
+    flex-direction: column;
+    align-items: center; /* Centers the items horizontally */
+    text-align: center; /* Ensures text content is centered */
+}
+
+.contact-content h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+.contact-content p {
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    /* Enlarge button on hover */
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        width: 90%; /* A bit more padding on smaller screens */
+        padding: 20px;
+    }
+}
+
+     
+        
