@@ -101,7 +101,46 @@ body {
         flex-basis: 90%;
     }
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
 
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.portfolio-image {
+    flex: 1;
+    max-width: 800px; /* Adjust it based on your preference */
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.portfolio-description {
+    flex: 2;
+    max-width: 600px;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .portfolio-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 /* Global Styles */
 body {
